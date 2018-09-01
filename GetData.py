@@ -18,11 +18,14 @@ from asyncio.tasks import sleep
 
 
 class tool:
+    
     def __init__(self):
+        #웹드라이버
         path = "C:/Users/J/Desktop/pro/webCR/chromedriver_win32/chromedriver.exe"
         self.driver = webdriver.Chrome(path)
 
     def visit(self,  url):
+        #url
         self.driver.get(url)
         return self
 
